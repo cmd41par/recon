@@ -1,0 +1,23 @@
+{
+    "name": "docker-dev",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "recon",
+    "workspaceFolder": "/app",
+    // "remoteUser": "appuser",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/opt/venv/bin/python"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "GitHub.vscode-pull-request-github",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-keymap",
+                "ms-toolsai.jupyter-renderers",
+                "mechatroner.rainbow-csv"
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+
+services:
+  recon:
+    image: recon
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /Users/chrisd/dev-projects/recon_src:/app
+      - /Users/chrisd/dev-projects/recon_data:/data
+    #user: appuser
+    environment:
+      - ENV=prod
+    command: sleep infinity
+
+    #restart: no
+
