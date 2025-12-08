@@ -22,7 +22,11 @@ def main():
         right_on="FDOC_DESC", 
         how="left"
     )
-    print(merged_df.head())
+    # print the stats for merged_df
+    print("Merged DataFrame Stats:")
+    print(merged_df.describe(include='all'))
+    merged_df.to_csv('/data/merged_df.csv', index=False)
+
 
 if __name__ == "__main__":
     # main("debug")
